@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
 
         TextView title = text("Knife Steel Compare",28,Typeface.BOLD);
         root.addView(title);
-        TextView sub = text("Compare up to 5 steels • offline • practical 1–10 estimates",14,Typeface.NORMAL);
+        TextView sub = text("Compare up to 5 steels • Knife Steel Nerds–based ratings",14,Typeface.NORMAL);
         sub.setTextColor(Color.DKGRAY);
         sub.setPadding(0,dp(3),0,dp(14));
         root.addView(sub);
@@ -226,7 +226,7 @@ public class MainActivity extends Activity {
         addScoreRow("Edge retention",active,colors,0);
         addScoreRow("Toughness",active,colors,1);
         addScoreRow("Corrosion",active,colors,2);
-        addScoreRow("Sharpenability",active,colors,3);
+        addScoreRow("Sharpenability*",active,colors,3);
 
         TextView notesHead=text("Details",18,Typeface.BOLD);
         notesHead.setPadding(0,dp(16),0,dp(6));
@@ -249,7 +249,7 @@ public class MainActivity extends Activity {
             stats.addView(n,lp);
         }
 
-        TextView foot=text("Scores are comparative estimates, not laboratory constants. Heat treatment, hardness, geometry, edge angle and sharpening finish can materially change real-world performance.",12,Typeface.NORMAL);
+        TextView foot=text("Toughness, edge-retention and corrosion scores follow Knife Steel Nerds-style ratings. *Sharpenability is derived as the inverse of edge retention, not a laboratory measurement. Heat treatment, hardness, geometry and edge finish can materially change real-world performance.",12,Typeface.NORMAL);
         foot.setTextColor(Color.GRAY);
         foot.setPadding(0,dp(6),0,0);
         stats.addView(foot);
