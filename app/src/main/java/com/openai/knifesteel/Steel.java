@@ -17,9 +17,9 @@ public final class Steel {
         this.note = note;
     }
 
-    public float[] values() {
-        // North, East, South, West
-        return new float[]{edge, toughness, corrosion, sharpening};
+    public float[] chartValues() {
+        // Top, bottom-right, bottom-left
+        return new float[]{edge, toughness, corrosion};
     }
 
     @Override public String toString() { return name; }
